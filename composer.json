@@ -1,0 +1,15 @@
+{
+    "name": "vendor/rbk-games",
+    "description": "Description of project rbk_games.",
+    "authors": [
+        {
+            "name": "Administrator",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {
+         "slim/slim": "2.*",
+         "slim/views": "0.1.*",
+         "twig/twig":"1.*"
+    }
+}

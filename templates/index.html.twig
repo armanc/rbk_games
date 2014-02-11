@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RBK games</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/css.css">
+        <script src="js/js.js"></script>
+    </head>
+    <body>
+        <div class="header-wrapper">     
+            <header>
+                <img class="logo" src="img/rbk-logo-header.png" alt="logo">
+                <ul>
+                    <li class="menu-button">
+                        <a>Игры</a>
+                        <div class="toggle-img"></div>
+                        <div class="inner-menu">
+                            <div class="inner-menu-section">
+                                <p>Жанры</p>
+                                <ul>
+                                    <li><a href="#">Стратегии</a></li>
+                                    <li><a href="#">РПГ</a></li>
+                                    <li><a href="#">Космические</a></li>
+                                    <li><a href="#">Морские</a></li>
+                                    <li><a href="#">Ферма</a></li>
+                                    <li><a href="#">Бизнес</a></li>
+                                    <li><a href="#">Настольные</a></li>
+                                </ul>
+                            </div>
+                            <div class="inner-menu-section">
+                                <p>Категории</p>
+                                <ul>
+                                    <li><a href="#">Браузерные игры</a></li>
+                                    <li><a href="#">Клиентские игры</a></li>
+                                </ul>
+                            </div>                        
+                        </div>
+                    </li>
+                    <li class="menu-button">
+                        <a href="{{ urlFor('news') }}">Новости</a>
+                    </li>
+                </ul>
+                <ul class="login">
+                    <li><a href="http://rbkgames.com/#login-dialog">Вход</a></li> |
+                    <li><a href="http://rbkgames.com/#register-dialog">Регистрация</a></li>
+                </ul>
+                
+            </header> 
+        </div>
+        
+        {% block content %}
+        <div class="wrapper">        
+            <div class="slider">
+                <img src="img/app_52_pic_slider.jpg" alt="slaideris">
+            </div>
+            <div class="box pop-games">
+                <h1 class="virsraksts underline"><a href=#>Популярные игры</a></h1>
+                <div class="pop-imgs">
+                    <div class="pop-img"><img src="img/app_8_pic_big.jpg" alt="pic"></div>
+                    <div class="pop-img"><img src="img/app_52_pic_medium.jpg" alt="pic"></div>
+                    <div class="pop-img"><img src="img/app_34_pic_medium.jpg" alt="pic"></div>
+                    <div class="pop-img"><img src="img/app_33_pic_medium.jpg" alt="pic"></div>
+                    <div class="pop-img"><img src="img/app_1_pic_medium.jpg" alt="pic"></div>
+                    <div class="pop-img"><img src="img/app_19_pic_medium.jpg" alt="pic"></div>
+                    <div class="pop-img clearfix"><img src="img/app_32_pic_medium.jpg" alt="pic"></div> 
+                </div>
+            </div>
+            <div class="box latest-news clearfix">
+                <h1 class="virsraksts">Последние новости</h1>
+                <div>
+                    <div class="news">
+                        <h3><a href="#">В бесплатной MMORPG Call of Gods время скидок</a></h3>
+                        <p>Не упустите возможность узнать об акциях в игре подробней!</p>
+                    </div>
+                    <div class="news">
+                        <h3><a href="#">Алмазная лихорадка в игре Империя Онлайн!</a></h3>
+                        <p>Читайте историю из жизни игры Империи Онлайн прямо сейчас. Почему лихорадка пришла именно в Империю Онлайн?</p>
+                    </div>
+                    <img class="latest-news-logo-img clearfix" src="img/app_null_pic_big.jpg" alt="logo">
+                    <div class="news ">                  
+                        <h3><a href="#">Викторина: выиграйте часть призового фонда от 3000 рублей!</a></h3>
+                        <p>Январь 2014 года - прекрасное время для участия в новом конкурсе, во время которого вам предстоит ответить на три простых вопроса и получить приз.</p>
+                    </div>
+                </div>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        {% endblock %}
+        
+        <div class="footer">
+            <div class="footer-inner">               
+                <div class="footer-text">
+                    <div class="footer-text-section">
+                        <img src="img/logo-footer.png" alt="rbk games">
+                    </div>    
+                    <div class="footer-text-section">
+                        <p>Жанры</p>
+                        <ul>
+                            <li><a href="#">Стратегии</a></li>
+                            <li><a href="#">РПГ</a></li>
+                            <li><a href="#">Космические</a></li>
+                            <li><a href="#">Морские</a></li>
+                            <li><a href="#">Ферма</a></li>
+                            <li><a href="#">Бизнес</a></li>
+                            <li><a href="#">Настольные</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-text-section">
+                        <p>Категории</p>
+                        <ul>
+                            <li><a href="#">Браузерные игры</a></li>
+                            <li><a href="#">Клиентские игры</a></li>
+                        </ul>
+                    </div> 
+                    <div class="footer-text-section">
+                        <p>Портал</p>
+                        <ul>
+                            <li><a href="#">Конфиденциальность</a></li>
+                            <li><a href="#">Правила пользования</a></li>
+                            <li><a href="#">Помощь</a></li>
+                            <li><a href="#">Документация</a></li>
+                            <li><a href="#">Стать разработчиком</a></li>
+                        </ul>
+                    </div> 
+                </div>  
+
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="footer2-inner">
+                <p>RBK Games © 2012-2014 Все права защищены</p>
+            </div>
+        </div>
+    </body>
+</html>

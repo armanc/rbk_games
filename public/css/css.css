@@ -1,0 +1,339 @@
+/* =========================== FONTI ========================== */
+@font-face{
+    font-family:'Roboto';
+    font-style:normal;
+    font-weight:300;
+    src:local('Roboto Light'),
+        local('Roboto-Light'),
+        url(http://themes.googleusercontent.com/static/fonts/roboto/v9/dtpHsbgPEm2lVWciJZ0P-A.ttf) 
+        format('truetype')
+}
+@font-face{
+    font-family:'Roboto';
+    font-style:normal;
+    font-weight:400;
+    src:local('Roboto Regular'),
+        local('Roboto-Regular'),
+        url(http://themes.googleusercontent.com/static/fonts/roboto/v9/W5F8_SL0XFawnjxHGsZjJA.ttf) 
+        format('truetype')
+}
+@font-face{
+    font-family:'Roboto';
+    font-style:normal;
+    font-weight:700;
+    src:local('Roboto Bold'),
+        local('Roboto-Bold'),
+        url(http://themes.googleusercontent.com/static/fonts/roboto/v9/bdHGHleUa-ndQCOrdpfxfw.ttf) 
+        format('truetype')
+}
+/* =========================== HEADER ========================== */
+body {
+    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top:68px;
+}
+
+// klasiskais p texts
+p {
+    font-size:14px
+}
+
+.header-wrapper {
+    background-color:rgba(255,255,255,.85);
+    position:fixed;
+    top:0;
+    min-height:60px; 
+    width:100%;  
+    
+}
+header {
+    min-height:68px; 
+    width:1034px;
+    margin:0 auto;
+   position:relative;
+}
+header ul {
+    display:inline-block;
+    padding:0;
+    margin:0;
+    vertical-align:middle;
+}
+header > * {
+    vertical-align: middle;
+}
+
+.logo {
+    padding:10px 50px 10px 30px;
+    display:inline-block;
+}
+li .dropdown {
+    
+}
+.menu-button {
+    display:inline-block;
+    border-radius:3px;
+    background-color:rgba(255,255,255,.9);
+    border: #ddd solid 1px;
+    font-size: 14px;
+    font-weight:bold;
+    padding:5px 14px;
+    margin:5px;
+    cursor:pointer;
+    align:top;
+    position:relative;
+}
+
+.menu-button:hover  {
+    background-color:black;
+    border: #fff solid 1px;
+    color:white;
+    
+}
+
+.toggle-img {
+    display:inline-block;
+    width:16px;
+    height:16px;
+    vertical-align: middle;
+    background:url(../img/icons-16.png) 32px 0;
+    margin-left:10px;
+}
+
+.menu-button:first-of-type:hover .toggle-img {
+    display:inline-block;
+    width:16px;
+    height:16px;
+    vertical-align: middle;
+    background:url(../img/icons-16.png) 16px 0;
+}
+
+.inner-menu {
+    width: 410px;
+    background-color:black;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:10;
+    max-height:0;
+    overflow:hidden;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; 
+}
+
+.menu-button:first-of-type:hover .inner-menu {
+    max-height: none;
+    padding:15px 15px;
+}
+
+.inner-menu p {
+    font-size:20px;
+    color:#999;
+    font-weight:bold;
+    margin:0 0 6px 0;
+}
+.inner-menu div {
+    width:193px;
+    float:left;
+}
+.inner-menu inner-menu-section:first-of-type {
+    border-right: #777 solid 1px;
+    margin-right:20px;
+}
+.inner-menu ul {
+    list-style-type: none;
+}
+.inner-menu a {
+    font-size:15px;
+    font-weight: 400;
+    color:white;
+    text-decoration:none;
+}
+.inner-menu a:hover {
+    color:green;   
+}
+.login {
+    display:inline-block;
+    float:right;
+    margin-top:14px;
+    margin-right:40px;
+    vertical-align:middle;
+    background-color:#fff;
+    padding:7px;
+    opacity:.85;
+}
+.login a {
+    font-size:14px;
+    font-weight:300;
+    color: #0072bc;
+    text-decoration: none;
+}
+.login a:hover {
+    text-decoration: underline;
+}
+.login li {
+    display:inline-block;
+}
+/* =========================== BASE ========================== */
+.slider {
+    margin:auto;
+    text-align:center;
+}
+
+.wrapper {
+    width:1052px;
+    margin:auto;
+}
+
+.box {
+    min-height:300px;
+    margin:10px 0;
+    padding-left:40px;
+    padding-top:5px;
+    margin-bottom:35px;
+}
+
+h1.virsraksts {
+    font-size: 36px;
+    font-family: "Roboto", "Arial";
+    display: inline-block;
+    font-weight: 300;   
+/*    text-shadow: 0 0 5px rgba(0,0,0,0.8);*/
+    vertical-align: top;
+}
+
+h1.underline {
+    border-bottom: #BBB solid 1px;
+}
+
+h1.virsraksts a {
+    text-decoration:none;
+    color:inherit;
+}
+
+/* POPULAR GAMES SADALJA */
+
+.pop-img img {
+    display:block;
+    float:left;
+    margin:2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    height:123px;
+    width:190px;
+}
+.pop-img:first-child img {
+    height:250px;
+    width:387px;
+}
+
+/* LATEST-NEWS SADALJA */
+
+.latest-news {
+    background-color:#eee;
+}
+
+.latest-news h3 {
+    padding:0;
+    margin:0;
+}
+.latest-news h3 a {
+     font-size:18px;
+     font-weight:500;
+     line-height:1.1;
+     font-family:inherit;
+     text-decoration:none;
+     color:#0072bc;
+}
+
+.news {
+    float:left;
+    width:170px;
+    margin-right:25px;
+}
+
+.latest-news-logo-img {
+    float:left;
+    margin:0 15px 15px 0;
+}
+
+/* =========================== FOOTER ========================== */
+.footer-inner,
+.footer2-inner {
+    width:1052px;
+    margin:auto;
+    padding:20px;
+    text-align:left;    
+}
+
+/* footer augsejais */
+.footer {
+    background-color: #1b1b1b;
+    vertical-align: top;
+    
+}
+
+.footer img {
+    display:inline-block;
+    margin:10px 10px 10px 40px;
+    vertical-align: top;
+}
+
+.footer-text-section {
+    width: 420px;
+}
+
+.footer-text p {
+    font-size:18px;
+    color:#999;
+    font-weight:400;
+    margin:0 0 6px 0;
+}
+.footer-text div {
+    width:193px;
+    display:inline-block;
+    vertical-align: top;
+}
+
+.footer-text ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+.footer-text a {
+    font-size:15px;
+    font-weight: 400;
+    color:white;
+    text-decoration:none;
+}
+.footer-text a:hover {
+    text-decoration: underline;  
+}
+
+
+/* footer apaksejais */
+.footer2 {
+    background-color: #000;
+    
+}
+
+.footer2 p {
+    color:#fff;
+    margin:0;
+    padding:0;
+    font-size:12px;
+    margin-left:40px; 
+}
+
+/* ============================ CITI ============================ */
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
